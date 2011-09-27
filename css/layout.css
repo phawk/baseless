@@ -135,12 +135,12 @@ table {
 section {
   margin: 0 0 1.667em;
   padding: 0 0 1.667em;
-  border-bottom: dotted 1px #ecf2f5;
+  border-bottom: dotted 1px #e3f3ec;
 }
 header nav ul {
   margin: 0;
   padding: 1.667em 0;
-  border-bottom: solid 1px #000000;
+  border-bottom: solid 1px #e3f3ec;
 }
 header nav ul li {
   display: inline-block;
@@ -155,7 +155,7 @@ header nav ul li a {
   text-decoration: none;
 }
 header nav ul li a.download {
-  background: #e07400;
+  background: #11c175;
   color: #fff;
   padding: .2em .4em;
 }
@@ -199,9 +199,9 @@ select {
   display: block;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
-  color: #6c6c6c;
+  color: #87807b;
   padding: .556em;
-  border: solid 1px #ecf2f5;
+  border: solid 1px #e3f3ec;
   border-radius: 4px;
   outline: none;
   box-sizing: border-box;
@@ -216,19 +216,19 @@ input[type="search"]:focus,
 input[type="number"]:focus,
 textarea:focus,
 select:focus {
-  border-color: #a9e000;
+  border-color: #3e5048;
 }
 input[type="submit"] {
   padding: .556em;
   font-size: 1em;
   color: #fff;
-  background: #000000;
+  background: #11c175;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 input[type="submit"]:hover {
-  background: #a9e000;
+  background: #1b2e26;
 }
 /* Typography
 --------------------------------------------------*/
@@ -239,7 +239,7 @@ body {
   font-family: Georgia, serif;
   font-size: 1.125em;
   line-height: 1.667em;
-  color: #6c6c6c;
+  color: #87807b;
 }
 /* Links */
 a {
@@ -249,7 +249,7 @@ a:hover {
   color: #004c9a;
 }
 a:active {
-  background: #ecf2f5;
+  background: #e3f3ec;
   color: #004c9a;
 }
 /* Headings */
@@ -261,9 +261,10 @@ h5,
 h6 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #000000;
+  color: #11c175;
 }
 h1 {
+  color: #1b2e26;
   font-size: 2.667em;
   line-height: 1.250em;
   margin: 0 0 .625em;
@@ -274,6 +275,7 @@ h2 {
   margin: .625em 0;
 }
 h3 {
+  color: #3e5048;
   font-size: 1.333em;
 }
 h4 {
@@ -286,9 +288,15 @@ p, li {
 /* Blockquotes */
 blockquote {
   padding: 1.667em;
-  background: #000000;
+  background: #1b2e26;
   color: #fff;
 }
 blockquote p:last-child {
   margin: 0;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-size: 0.778em;
+  color: #3e5048;
 }

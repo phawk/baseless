@@ -2,12 +2,14 @@
 
 /* Colours
 --------------------------------------------------*/
-@black: #000;
-@body: #6c6c6c;
-@light: #ecf2f5;
+@black: #1b2e26;
 
-@green: #a9e000;
-@orange: #e07400;
+@heading: #11c175;
+@heading_light: #3e5048;
+
+@body: #87807b;
+
+@light: #e3f3ec;
 
 @link: #0089e0;
 @link_hover: #004c9a;
@@ -30,7 +32,7 @@ section{
 header nav ul{
 	margin: 0;
 	padding: 1.667em 0;
-	border-bottom: solid 1px @black;
+	border-bottom: solid 1px @light;
 }
 
 header nav ul li{
@@ -47,7 +49,7 @@ header nav ul li a{
 }
 
 header nav ul li a.download{
-	background: @orange;
+	background: @heading;
 	color: #fff;
 	padding: .2em .4em;
 }
@@ -118,21 +120,21 @@ input[type="search"]:focus,
 input[type="number"]:focus, 
 textarea:focus,
 select:focus{
-	border-color: @green;
+	border-color: @heading_light;
 }
 
 input[type="submit"]{
 	padding: .556em; // 10px
 	font-size: 1em; // 18px
 	color: #fff;
-	background: @black;
+	background: @heading;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 }
 
 input[type="submit"]:hover{
-	background: @green;
+	background: @black;
 }
 
 
@@ -164,10 +166,11 @@ a:active{
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	color: @black;
+	color: @heading;
 }
 
 h1{
+	color: @black;
 	font-size: 2.667em; // 48px
 	line-height: 1.250em; // 60px
 	margin: 0 0 .625em; // 30px
@@ -180,6 +183,7 @@ h2{
 }
 
 h3{
+	color: @heading_light;
 	font-size: 1.333em; // 24px
 }
 
@@ -203,4 +207,11 @@ blockquote{
 
 blockquote p:last-child{
 	margin: 0;
+}
+
+blockquote cite{
+	display: block;
+	text-align: right;
+	font-size: 0.778em;
+	color: @heading_light;
 }
