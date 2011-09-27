@@ -249,6 +249,7 @@ html {
 body {
   font-family: Georgia, serif;
   font-size: 1.125em;
+  -webkit-text-size-adjust: 100%;
   line-height: 1.667em;
   color: #87807b;
 }
@@ -310,4 +311,12 @@ blockquote cite {
   text-align: right;
   font-size: 0.778em;
   color: #11c175;
+}
+/* Responsiveness
+--------------------------------------------------*/
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 1em;
+    margin: 2em;
+  }
 }

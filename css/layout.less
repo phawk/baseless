@@ -160,6 +160,7 @@ html{ font-size: 100%; } // Set font size to browser default (16px)
 body{
 	font-family: Georgia, serif;
 	font-size: 1.125em; // 18px
+	-webkit-text-size-adjust:100%;
 	line-height: 1.667em; // 30px
 	color: @body;
 }
@@ -228,4 +229,17 @@ blockquote cite{
 	text-align: right;
 	font-size: 0.778em;
 	color: @heading;
+}
+
+
+
+/* Responsiveness
+--------------------------------------------------*/
+@media screen and (max-width: 720px) {
+	
+	body{
+		font-size: 1em;
+		margin: 2em;
+	}
+	
 }
