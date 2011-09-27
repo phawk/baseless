@@ -21,7 +21,6 @@
 	<h3>Simple css styles for type, lists and forms.</h3>
 	<nav>
 		<ul>
-			<li><a href="#wrapper">Home</a></li>
 			<li><a href="#intro">About</a></li>
 			<li><a href="#forms">Forms</a></li>
 			<li><a href="#lists">Lists</a></li>
@@ -32,30 +31,34 @@
 
 <section id="intro">
 	<h2>What is baseless?</h2>
-	<p>Baseless is designed to help developers (and designers) in prototyping webs app and web sites. Baseless provides all the simple styling you will need to mock up a quick working prototype, and will help you quickly tweak the styles when you do have more time.</p>
+	<p>Baseless is designed to help developers (and designers) in prototyping webs app and web sites.</p>
+	<p>Baseless provides most of the simple styling you will need to mock up a quick working prototype, and will help you quickly tweak the styles when you do have more time.</p>
+	
 	<h3>How is it different?</h3>
-	<p>There are too many "grid systems" and bootstraps that don't actually help you get anything done. You spend all your time figuring out how to use them, with baseless just write markup your way and see it simple styled before your eyes! If you want to float a column or make something fluid - you do it!</p>
+	<p>There are too many "grid systems" and bootstraps that don't actually help you get anything done. You spend all your time figuring out how to use them. With baseless just write markup your way and with the generic css rules, it won't look like an eyesore. If you want to float a column or make something fluid do it yourself! &mdash; some grid systems can hold you back and make a mess of your markup, most of the time you're be better off just doing this yourself.</p>
+	
 	<blockquote>
 		<p>&ldquo;<strong>baseless</strong> will help you get web apps kicked off quickly.</p>
 		<p>Jump right into the code and don't worry about the front end&rdquo;</p>
-		<cite>Pete Hawkins (creator)</cite>
+		<cite>Pete Hawkins (author)</cite>
 	</blockquote>
+	
 	<h2>Who made it?</h2>
-	<p>Baseless was handcrafted by <a href="http://phawk.co.uk/page/about">Pete Hawkins</a>. Pete is a web developer from Northern Ireland.</p>
+	<p>Baseless was handcrafted by <a href="http://phawk.co.uk/page/about">Pete Hawkins</a>, a web developer from Northern Ireland.</p>
 	<p>You can get more cool stuff like this on <a href="http://phawk.co.uk">Petes blog</a>, or <a href="http://twitter.com/peteyhawkins">follow him on twitter</a>.</p>
 </section>
 
 <section id="forms">
 	<h2>An example form</h2>
-	<p>Please fill out the information below</p>
 	<form>
+		<p>All fields marked <span class="req">*</span> are required!</p>
 		<ol>
 			<li>
-				<label for="name">Name</label>
+				<label for="name"><span class="req">*</span>Name</label>
 				<input type="text" name="name" id="name" />
 			</li>
 			<li>
-				<label for="email">Email</label>
+				<label for="email"><span class="req">*</span>Email</label>
 				<input type="email" name="email" id="email" />
 			</li>
 			<li>
@@ -81,13 +84,19 @@
 <section id="lists">
 	<h2>Example lists</h2>
 	<h3>Browser support</h3>
-	<ul>
+	<ol>
 		<li>Google Chrome, Safari and web-kit</li>
 		<li>Firefox</li>
 		<li>IE 9+</li>
+	</ol>
+	
+	<h3>Who/what it baseless for?</h3>
+	<ul>
+		<li>Web developers looking to prototype something fast, making time for lots of backend coding, without having to worry about the front end for a little while.</li>
+		<li>Web designers looking to mockup a very quick site structure and get content in place.</li>
+		<li>A template for people writing content centric websites such as blogs.</li>
+		<li>Whatever else you guys want to do with it!</li>
 	</ul>
-	
-	
 </section>
 
 <section id="download">
@@ -98,6 +107,9 @@
 		<li>Put the css directory into your site</li>
 		<li>Either use standard css or get the <a href="http://incident57.com/less/">Less Mac app</a></li>
 	</ol>
+	
+	<h3>Reporting Issues</h3>
+	<p>All the code is managed using <a href="https://github.com/peteyhawkins/baseless">github</a>, so feel free to <a href="https://github.com/peteyhawkins/baseless/issues">post an issue</a>, or even fork the code and submit a pull request.</p>
 </section>
 
 <footer>
