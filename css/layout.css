@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Colours
+--------------------------------------------------*/
+/* Containers
+--------------------------------------------------*/
+#wrapper {
+  width: 100%;
+  max-width: 30em;
+  margin: 2em auto;
+}
+section {
+  margin: 0 0 1.667em;
+  padding: 0 0 1.667em;
+  border-bottom: dotted 1px #ecf2f5;
+}
+header nav ul {
+  margin: 0;
+  padding: 1.667em 0;
+  border-bottom: solid 1px #000000;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 1.667em 0 0;
+}
+header nav ul li:last-child {
+  margin: 0;
+}
+header nav ul li a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+}
+header nav ul li a.download {
+  background: #e07400;
+  color: #fff;
+  padding: .2em .4em;
+}
+header nav ul li a.download:hover {
+  text-decoration: underline;
+}
+/* Lists
+--------------------------------------------------*/
+ul, ol {
+  display: block;
+  margin: 1.667em 0.833em;
+  list-style: square;
+}
+ol {
+  list-style: decimal;
+}
+ul li, ol li {
+  margin: 0.833em;
+}
+/* Forms
+--------------------------------------------------*/
+form ol {
+  margin: .833em 0;
+  list-style: none;
+}
+form ol li {
+  margin: 0.833em 0;
+}
+label {
+  display: block;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+textarea,
+select {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #6c6c6c;
+  padding: .556em;
+  border: solid 1px #ecf2f5;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #a9e000;
+}
+input[type="submit"] {
+  padding: .556em;
+  font-size: 1em;
+  color: #fff;
+  background: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #a9e000;
+}
+/* Typography
+--------------------------------------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.667em;
+  color: #6c6c6c;
+}
+/* Links */
+a {
+  color: #0089e0;
+}
+a:hover {
+  color: #004c9a;
+}
+a:active {
+  background: #ecf2f5;
+  color: #004c9a;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+h1 {
+  font-size: 2.667em;
+  line-height: 1.250em;
+  margin: 0 0 .625em;
+}
+h2 {
+  font-size: 2.000em;
+  line-height: 1.250em;
+  margin: .625em 0;
+}
+h3 {
+  font-size: 1.333em;
+}
+h4 {
+  font-size: 1em;
+}
+/* Standard text */
+p, li {
+  margin: 0 0 .833em;
+}
+/* Blockquotes */
+blockquote {
+  padding: 1.667em;
+  background: #000000;
+  color: #fff;
+}
+blockquote p:last-child {
+  margin: 0;
+}

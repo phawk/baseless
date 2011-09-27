@@ -1,0 +1,206 @@
+@import "reset.less";
+
+/* Colours
+--------------------------------------------------*/
+@black: #000;
+@body: #6c6c6c;
+@light: #ecf2f5;
+
+@green: #a9e000;
+@orange: #e07400;
+
+@link: #0089e0;
+@link_hover: #004c9a;
+
+
+/* Containers
+--------------------------------------------------*/
+#wrapper{
+	width: 100%;
+	max-width: 30em;
+	margin: 2em auto;
+}
+
+section{
+	margin: 0 0 1.667em; // 30px
+	padding: 0 0 1.667em; // 30px
+	border-bottom: dotted 1px @light;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 1.667em 0;
+	border-bottom: solid 1px @black;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin: 0 1.667em 0 0; // 30px
+}
+
+header nav ul li:last-child{ margin: 0; }
+
+header nav ul li a{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+header nav ul li a.download{
+	background: @orange;
+	color: #fff;
+	padding: .2em .4em;
+}
+
+header nav ul li a.download:hover{ text-decoration: underline; }
+
+
+
+/* Lists
+--------------------------------------------------*/
+ul, ol{
+	display: block;
+	margin: 1.667em 0.833em; // 30px / 15px
+	list-style: square;
+}
+
+ol{ list-style: decimal; }
+
+ul li, ol li{
+	margin: 0.833em; // 15px
+}
+
+
+
+
+/* Forms
+--------------------------------------------------*/
+form ol{
+	margin: .833em 0; // 15px
+	list-style: none;
+}
+
+form ol li{
+	margin: 0.833em 0; // 15px
+}
+
+label{
+	display: block;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="search"], 
+input[type="number"], 
+textarea,
+select{
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em; // 18px
+	color: @body;
+	padding: .556em; // 10px
+	border: solid 1px @light;
+	border-radius: 4px;
+	outline: none; // remove safari & chrome outer glow
+	box-sizing: border-box;
+	width: 100%;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="number"]:focus, 
+textarea:focus,
+select:focus{
+	border-color: @green;
+}
+
+input[type="submit"]{
+	padding: .556em; // 10px
+	font-size: 1em; // 18px
+	color: #fff;
+	background: @black;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: @green;
+}
+
+
+
+/* Typography
+--------------------------------------------------*/
+html{ font-size: 100%; } // Set font size to browser default (16px)
+
+body{
+	font-family: Georgia, serif;
+	font-size: 1.125em; // 18px
+	line-height: 1.667em; // 30px
+	color: @body;
+}
+
+
+/* Links */
+a{ color: @link; }
+
+a:hover{ color: @link_hover; }
+
+a:active{
+	background: @light;
+	color: @link_hover;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: @black;
+}
+
+h1{
+	font-size: 2.667em; // 48px
+	line-height: 1.250em; // 60px
+	margin: 0 0 .625em; // 30px
+}
+
+h2{
+	font-size: 2.000em; // 36px
+	line-height: 1.250em; // 45px
+	margin:  .625em 0; // 30px
+}
+
+h3{
+	font-size: 1.333em; // 24px
+}
+
+h4{
+	font-size: 1em; // 18px
+}
+
+
+/* Standard text */
+p, li{
+	margin: 0 0 .833em; // 15px
+}
+
+
+/* Blockquotes */
+blockquote{
+	padding: 1.667em;
+	background: @black;
+	color: #fff;
+}
+
+blockquote p:last-child{
+	margin: 0;
+}
